@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Belajar Membuat Kalkulator</title>
+    </head>
+    <body>
+        <h1>Kalkulator Sederhana</h1>
+
+        <input type="number" id="input1" />
+        <br /><br />
+
+        <select name="" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br /><br />
+
+        <input type="number" id="input2" />
+        <br /><br />
+
+        <button onclick="hasil()">Submit</button>
+        <br /><br />
+
+        <div>
+            =
+            <span id="hasil"></span>
+        </div>
+
+        <script>
+            const hasil = function () {
+                const input1 = document.getElementById('input1').value;
+                const input2 = document.getElementById('input2').value;
+                const operator = document.getElementById('operator').value;
+                const hasil = document.getElementById('hasil');
+
+                return (hasil.innerHTML = eval(input1 + operator + input2));
+            };
+        </script>
+    </body>
+</html>

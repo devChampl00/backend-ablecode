@@ -1,0 +1,33 @@
+<section class="mt-5">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header">Data Buku</h5>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% books.forEach(book => { %>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><%= book.title %></td>
+                            <td><%= book.price %></td>
+                            <td>
+                                <a href="#">Edit</a>
+                                <a href="#">Hapus</a>
+                            </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+                <a href="/books/create" class="btn btn-primary">Tambah data</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="mt-5">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header">Buat Data</h5>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form method="post" action="/books">
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Book Title</label>
+                                <input type="text" class="form-control" id="title" name="title" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Book Price</label>
+                                <input type="number" class="form-control" id="price" name="price" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="/books" class="btn btn-secondary">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
